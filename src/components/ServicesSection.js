@@ -12,6 +12,7 @@ import { useScroll } from "./useScroll";
 
 function ServicesSection() {
   const [element, controls] = useScroll();
+  console.log(element);
   return (
     <Services
       variants={scrollReveal}
