@@ -27,7 +27,6 @@ function MovieDetail() {
           variants={pageAnimation}
           initial="hidden"
           animate="show"
-          style={{ background: "#fff" }}
         >
           <HeadLine>
             <h2>{movie.title}</h2>
@@ -76,6 +75,10 @@ const Awards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1300px) {
+    display: block;
+    margin: 2rem;
+  }
 `;
 const AwardStyle = styled.div`
   padding: 5rem;
